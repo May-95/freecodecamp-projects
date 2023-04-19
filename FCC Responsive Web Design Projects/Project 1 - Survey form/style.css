@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@600&display=swap');
+
+
+:root {
+  --dark-grey-blue: #1a2639;
+  --grey-blue: #3e4a61;
+  --light-grey: #d9dad7;
+  --orange: #c24d2c;
+}
+
+* {
+  color: white;
+  line-height: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--dark-grey-blue);
+}
+
+.container {
+  background-color: var(--grey-blue);
+  border-radius: 20px;
+  margin: 70px auto;
+  max-width: 700px;
+  padding: 20px 20px 10px 20px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Noto Serif Hebrew', serif;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.info,
+.dropdown,
+.checkbox,
+.radio,
+.textarea,
+.button {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.input,
+.dropdown-options {
+  border-radius: 5px;
+  border: 0;
+  color: black;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.dropdown-options {
+  height: 34px;
+}
+
+.checkbox,
+.textarea,
+.radio {
+  accent-color: var(--orange);
+  margin-bottom: 20px;
+}
+
+.user-option {
+  display: flex;
+  gap: 8px;
+}
+
+.checkbox-input,
+.radio-button {
+  margin-top: 3px;
+}
+
+.question {
+  margin-bottom: 8px;
+}
+
+.textarea-input {
+  color: black;
+  margin-top: 8px;
+  max-width: 100%;
+}
+
+.button {
+  background-color: var(--orange);
+  border-radius: 8px;
+  border-width: 0;
+  color: var(--light-grey);
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  margin: 35px auto;
+  padding: 10px 12px;
+  width: 30%;
+}

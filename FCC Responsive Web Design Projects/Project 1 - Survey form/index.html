@@ -3,47 +3,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Greenview Library's Survey</title>
   </head>
   <body>
     <main class="container">
       <!-- heading section -->
       <section class="heading">
-        <h1 id="title">Greenview Library's Survey</h1>
-        <p id="description">
+        <h1 id="title" class="title">Greenview Library's Survey</h1>
+        <p id="description" class="description">
           Thank you for taking the time to help us improve our library and its
           services!
         </p>
       </section>
       <!-- survey form section -->
       <form id="survey-form">
-        <label for="name" id="name-label">Name:</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter your name..."
-          required
-        />
-        <label for="email" id="email-label">Email Address:</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email address..."
-          required
-        />
-        <label for="number" id="number-label">Age (optional):</label>
-        <input
-          type="number"
-          id="number"
-          placeholder="Enter your age..."
-          min="13"
-          max="140"
-        />
+        <div class="info">
+          <label for="name" id="name-label" class="label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            class="input"
+            placeholder="Enter your name..."
+            required
+          />
+          <label for="email" id="email-label" class="label"
+            >Email Address:</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="input"
+            placeholder="Enter your email address..."
+            required
+          />
+          <label for="number" id="number-label" class="label"
+            >Age (optional):</label
+          >
+          <input
+            type="number"
+            id="number"
+            class="input"
+            placeholder="Enter your age..."
+            min="13"
+            max="140"
+          />
+        </div>
+
         <div class="dropdown">
           <label for="dropdown"
             >On average, how often do you visit the library?</label
           >
-          <select name="dropdown" id="dropdown">
+          <select name="dropdown" id="dropdown" class="dropdown-options">
+            <option value="" disabled selected>
+              --Please choose an option--
+            </option>
             <option value="first-time">This is my first time</option>
             <option value="every-day">Every day</option>
             <option value="several-times-week">Several times a week</option>
@@ -55,141 +69,208 @@
           </select>
         </div>
         <div class="checkbox">
-          <p>What do you usually do when you visit the library?</p>
-          <input
-            type="checkbox"
-            id="visit-choice1"
-            name="visit-choice1"
-            value="borrow-return-books"
-          />
-          <label for="visit-choice1">Borrow or return books</label>
-          <input
-            type="checkbox"
-            id="visit-choice2"
-            name="visit-choice2"
-            value="read-in-library"
-          />
-          <label for="visit-choice2">Read in the library</label>
-          <input
-            type="checkbox"
-            id="visit-choice3"
-            name="visit-choice3"
-            value="use-computer"
-          />
-          <label for="visit-choice3">Use the computers</label>
-          <input
-            type="checkbox"
-            id="visit-choice4"
-            name="visit-choice4"
-            value="study-work"
-          />
-          <label for="visit-choice4">Study/work in the library</label>
-          <input
-            type="checkbox"
-            id="visit-choice5"
-            name="visit-choice5"
-            value="photocopier"
-          />
-          <label for="visit-choice5">Use the photocopier</label>
-          <input
-            type="checkbox"
-            id="visit-choice6"
-            name="visit-choice6"
-            value="attend-events"
-          />
-          <label for="visit-choice6">Attend events</label>
-          <input
-            type="checkbox"
-            id="visit-choice7"
-            name="visit-choice7"
-            value="friends"
-          />
-          <label for="visit-choice7">Meet friends</label>
-          <input
-            type="checkbox"
-            id="visit-choice8"
-            name="visit-choice8"
-            value="none"
-          />
-          <label for="visit-choice8">None of the above</label>
+          <p class="question">
+            What do you usually do when you visit the library?
+          </p>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice1"
+              name="visit-choice1"
+              value="borrow-return-books"
+            />
+            <label for="visit-choice1">Borrow or return books</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice2"
+              name="visit-choice2"
+              value="read-in-library"
+            />
+            <label for="visit-choice2">Read in the library</label>
+          </div>
+
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice3"
+              name="visit-choice3"
+              value="use-computer"
+            />
+            <label for="visit-choice3">Use the computers</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice4"
+              name="visit-choice4"
+              value="study-work"
+            />
+            <label for="visit-choice4">Study/work in the library</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice5"
+              name="visit-choice5"
+              value="photocopier"
+            />
+            <label for="visit-choice5">Use the photocopier</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice6"
+              name="visit-choice6"
+              value="attend-events"
+            />
+            <label for="visit-choice6">Attend events</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice7"
+              name="visit-choice7"
+              value="friends"
+            />
+            <label for="visit-choice7">Meet friends</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="visit-choice8"
+              name="visit-choice8"
+              value="none"
+            />
+            <label for="visit-choice8">None of the above</label>
+          </div>
         </div>
+
         <div class="checkbox">
-          <p>Which library services do you use online?</p>
-          <input
-            type="checkbox"
-            id="online-service1"
-            name="online-service1"
-            value="catelogue"
-          />
-          <label for="online-service1">Online catelogue</label>
-          <input
-            type="checkbox"
-            id="online-service2"
-            name="online-service2"
-            value="renew-loans"
-          />
-          <label for="online-service2">Renew loans</label>
-          <input
-            type="checkbox"
-            id="online-service3"
-            name="online-service3"
-            value="reservations"
-          />
-          <label for="online-service3">Make reservations</label>
-          <input
-            type="checkbox"
-            id="online-service4"
-            name="online-service4"
-            value="borrow-ebooks"
-          />
-          <label for="online-service4">Borrow e-books</label>
-          <input
-            type="checkbox"
-            id="online-service5"
-            name="online-service5"
-            value="borrow-emagazines"
-          />
-          <label for="online-service5">Borrow e-magazines</label>
-          <input
-            type="checkbox"
-            id="online-service6"
-            name="online-service6"
-            value="none"
-          />
-          <label for="online-service6"
-            >I don't use the library's online services</label
-          >
+          <p class="question">Which library services do you use online?</p>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="online-service1"
+              name="online-service1"
+              value="catelogue"
+            />
+            <label for="online-service1">Online catalogue</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="online-service2"
+              name="online-service2"
+              value="renew-loans"
+            />
+            <label for="online-service2">Renew loans</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="online-service3"
+              name="online-service3"
+              value="reservations"
+            />
+            <label for="online-service3">Make reservations</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="online-service4"
+              name="online-service4"
+              value="borrow-ebooks"
+            />
+            <label for="online-service4">Borrow e-books</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="online-service5"
+              name="online-service5"
+              value="borrow-emagazines"
+            />
+            <label for="online-service5">Borrow e-magazines</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="online-service6"
+              name="online-service6"
+              value="none"
+            />
+            <label for="online-service6"
+              >I don't use the library's online services</label
+            >
+          </div>
         </div>
+
         <div class="radio">
-          <p>
+          <p class="question">
             Do you think this library is an enjoyable, safe and inclusive place
             to visit?
           </p>
-          <input type="radio" id="yes" name="yes-no-dontknow" value="yes" />
-          <label for="yes">Yes</label>
-          <input type="radio" id="no" name="yes-no-dontknow" value="no" />
-          <label for="no">No</label>
-          <input
-            type="radio"
-            id="dont-know"
-            name="yes-no-dontknow"
-            value="dont-know"
-          />
-          <label for="dont-know">Don't know</label>
+          <div class="user-option">
+            <input
+              type="radio"
+              class="radio-button"
+              id="yes"
+              name="yes-no-dontknow"
+              value="yes"
+            />
+            <label for="yes">Yes</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="radio"
+              class="radio-button"
+              id="no"
+              name="yes-no-dontknow"
+              value="no"
+            />
+            <label for="no">No</label>
+          </div>
+          <div class="user-option">
+            <input
+              type="radio"
+              class="radio-button"
+              id="dont-know"
+              name="yes-no-dontknow"
+              value="dont-know"
+            />
+            <label for="dont-know">Don't know</label>
+          </div>
         </div>
         <div class="textarea">
-          <label for="additional-comments"
+          <label for="additional-comments" class="question"
             >Any suggestions for library improvements you would like to
             see:</label
           >
           <textarea
             id="additional-comments"
+            class="textarea-input"
             name="additional-comments"
             rows="4"
-            cols="50"
+            cols="68"
           ></textarea>
         </div>
-        <button type="submit" id="submit">Submit</button>
+        <button type="submit" id="submit" class="button">Submit</button>
       </form>
     </main>
   </body>

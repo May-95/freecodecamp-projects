@@ -1,0 +1,149 @@
+* {
+  line-height: 1.3rem;
+}
+
+body {
+  margin: 0;
+}
+
+/* navbar css */
+.navbar {
+  background-color: lightgray;
+  border-color: rgba(0, 22, 22, 0.4);
+  height: 180px;
+  overflow: auto;
+  width: 100%;
+  z-index: 99;
+}
+
+.nav-list-heading {
+  letter-spacing: 4px;
+  list-style: none;
+  padding-bottom: 0px;
+  padding-top: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-underline-offset: 5px;
+}
+
+.nav-list-item {
+  list-style: none;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+}
+
+/* main content css */
+.main {
+  max-width: 100%;
+  padding: 20px;
+  position: absolute;
+}
+
+.h1-heading {
+  text-align: center;
+}
+
+.paragraph,
+.h2-heading,
+.h3-heading {
+  margin: 0;
+  padding: 20px 20px 0;
+}
+
+.h1-heading,
+.h2-heading,
+.h3-heading {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+}
+
+.grey {
+  border-radius: 3px;
+  color: #505050;
+  padding: 0 5px;
+}
+
+.red {
+  color: rgb(211, 0, 56);
+}
+
+.grey,
+.code-snippet {
+  background-color: rgb(242, 241, 241);
+  letter-spacing: 1px;
+}
+
+.code-snippet {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.attribute-img {
+  contain: content;
+  margin-top: 20px;
+  max-width: 90%;
+  padding-left: 20px;
+  width: 500px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  margin-left: 30px;
+}
+
+.html-element-list {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.alt-img {
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  padding: 0;
+}
+
+a {
+  color: black;
+}
+
+/* media queries */
+@media only screen and (min-width: 800px) {
+  .navbar {
+    background-color: lightgray;
+    border-color: rgba(0, 22, 22, 0.4);
+    border-right: solid;
+    height: 100%;
+    left: 0px;
+    min-width: 290px;
+    position: fixed;
+    top: 0px;
+    width: 300px;
+  }
+
+  .main {
+    margin-bottom: 110px;
+    margin-left: 310px;
+    max-width: 80%;
+    padding: 20px;
+    position: absolute;
+  }
+}

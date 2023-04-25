@@ -1,0 +1,390 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML Basics</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+            <li class="nav-list-heading">
+                Content
+            </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#what-is-html">So what is HTML?</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#html-anatomy"
+              >Anatomy of an HTML element</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#nesting-elements">Nesting elements</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#void-elements">Void elements</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#anatomy-html-doc"
+              >Anatomy of an HTML document</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#images">Images</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#marking-text">Marking up text</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#headings">Headings</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#paragraphs">Paragraphs</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#lists">Lists</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#links">Links</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navbar-link" href="#reference">Reference</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="h1-heading">HTML basics</h1>
+      <p class="paragraph">
+        HTML (<span class="bold">H</span>yper<span class="bold">T</span>ext
+        <span class="bold">M</span>arkup <span class="bold">L</span>anguage) is
+        the code that is used to structure a web page and its content. For
+        example, content could be structured within a set of paragraphs, a list
+        of bulleted points, or using images and data tables. As the title
+        suggests, this article will give you a basic understanding of HTML and
+        its functions.
+      </p>
+      <section id="what-is-html">
+        <h2 class="h2-heading">So what is HTML?</h2>
+        <p class="paragraph">
+          HTML is a markup language that defines the structure of your content.
+          HTML consists of a series of elements, which you use to enclose, or
+          wrap, different parts of the content to make it appear a certain way,
+          or act a certain way. The enclosing tags can make a word or image
+          hyperlink to somewhere else, can italicize words, can make the font
+          bigger or smaller, and so on. For example, take the following line of
+          content:
+        </p>
+        <p class="code-snippet">My cat is very grumpy</p>
+        <p class="paragraph">
+          If we wanted the line to stand by itself, we could specify that it is
+          a paragraph by enclosing it in paragraph tags:
+        </p>
+        <p class="code-snippet">&ltp&gtMy cat is very grumpy&lt/p&gt;</p>
+      </section>
+      <section id="html-anatomy">
+        <h3 class="h3-heading">Anatomy of an HTML element</h3>
+        <p class="paragraph">The main parts of our element are as follows:</p>
+        <ol>
+          <li>
+            <span class="bold">The opening tag:</span> This consists of the name
+            of the element (in this case, p), wrapped in opening and closing
+            <span class="bold">angle brackets</span>. This states where the
+            element begins or starts to take effect — in this case where the
+            paragraph begins.
+          </li>
+          <li>
+            <span class="bold">The closing tag:</span> This is the same as the
+            opening tag, except that it includes a forward slash before the
+            element name. This states where the element ends — in this case
+            where the paragraph ends. Failing to add a closing tag is one of the
+            standard beginner errors and can lead to strange results.
+          </li>
+          <li>
+            <span class="bold">The content:</span> This is the content of the
+            element, which in this case, is just text.
+          </li>
+          <li>
+            <span class="bold">The element:</span> The opening tag, the closing
+            tag, and the content together comprise the element.
+          </li>
+        </ol>
+        <p class="paragraph">Elements can also have attributes that look like the following:</p>
+        <img class="attribute-img" src="images/attributes-example.png" alt="" />
+        <p class="paragraph">
+          Attributes contain extra information about the element that you don't
+          want to appear in the actual content. Here,
+          <span class="grey">class</span> is the attribute name and
+          <span class="grey">editor-note</span> is the attribute value. The
+          <span class="grey">class</span> attribute allows you to give the
+          element a non-unique identifier that can be used to target it (and any
+          other elements with the same <span class="grey">class</span> value)
+          with style information and other things. Some attributes have no
+          value, such as <span class="grey">required</span>.
+        </p>
+        <p class="paragraph">Attributes that set a value always have:</p>
+        <ol>
+          <li>
+            A space between it and the element name (or the previous attribute,
+            if the element already has one or more attributes).
+          </li>
+          <li>The attribute name followed by an equal sign.</li>
+          <li>
+            The attribute value wrapped by opening and closing quotation marks.
+          </li>
+        </ol>
+      </section>
+      <section id="nesting-elements">
+        <h3 class="h3-heading">Nesting elements</h3>
+        <p class="paragraph">
+          You can put elements inside other elements too — this is called
+          <span class="bold">nesting</span>. If we wanted to state that our cat
+          is <span class="bold">very</span> grumpy, we could wrap the word
+          "very" in a <span class="grey">&ltstrong&gt</span> element, which
+          means that the word is to be strongly emphasized:
+        </p>
+        <p class="code-snippet">
+          &lt<span class="green">p</span>>My cat is &lt<span class="green"
+            >strong</span
+          >>very&lt/<span class="green">strong</span>> grumpy.&lt/<span
+            class="green"
+            >p</span
+          >>
+        </p>
+      </section>
+      <section id="void-elements">
+        <h3 class="h3-heading">Void elements</h3>
+        <p class="paragraph">
+          Some elements have no content and are called void elements. Take the
+          <img /> element that we already have in our HTML page:
+        </p>
+        <p class="code-snippet">
+          &lt<span class="green">img</span> <span class="red">src</span>="<span
+            class="green"
+            >images/firefox-icon.png</span
+          >" <span class="red">alt</span>="<span class="green"
+            >My test image</span
+          >" />
+        </p>
+        <p class="paragraph">
+          This contains two attributes, but there is no closing
+          <span class="grey">&lt/img></span> tag and no inner content. This is
+          because an image element doesn't wrap content to affect it. Its
+          purpose is to embed an image in the HTML page in the place it appears.
+        </p>
+      </section>
+      <section id="anatomy-html-doc">
+        <h3 class="h3-heading">Anatomy of an HTML document</h3>
+        <p class="paragraph">
+          That wraps up the basics of individual HTML elements, but they aren't
+          handy on their own. Now we'll look at how individual elements are
+          combined to form an entire HTML page.
+        </p>
+        <ul class="html-element-list">
+          <li>
+            <span class="grey">&lt!DOCTYPE html></span> — doctype. It is a
+            required preamble. In the mists of time, when HTML was young (around
+            1991/92), doctypes were meant to act as links to a set of rules that
+            the HTML page had to follow to be considered good HTML, which could
+            mean automatic error checking and other useful things. However,
+            these days, they don't do much and are basically just needed to make
+            sure your document behaves correctly. That's all you need to know
+            for now.
+          </li>
+          <li>
+            <span class="grey">&lthtml>&lt/html></span> — the
+            <span class="grey">&lthtml></span> element. This element wraps all
+            the content on the entire page and is sometimes known as the root
+            element. It also includes the
+            <span class="grey">lang</span> attribute, setting the primary
+            language of the document.
+          </li>
+          <li>
+            <span class="grey">&lthead>&lt/head></span> — the
+            <span class="grey">&lthead></span> element. This element acts as a
+            container for all the stuff you want to include on the HTML page
+            that isn't the content you are showing to your page's viewers. This
+            includes things like keywords and a page description that you want
+            to appear in search results, CSS to style our content, character set
+            declarations, and more.
+          </li>
+          <li>
+            <span class="grey">&ltmeta charset="utf-8"></span> — This element
+            sets the character set your document should use to UTF-8 which
+            includes most characters from the vast majority of written
+            languages. Essentially, it can now handle any textual content you
+            might put on it. There is no reason not to set this, and it can help
+            avoid some problems later on.
+          </li>
+          <li>
+            <span class="grey"
+              >&ltmeta name="viewport" content="width=device-width"></span
+            >
+            — This viewport element ensures the page renders at the width of
+            viewport, preventing mobile browsers from rendering pages wider than
+            the viewport and then shrinking them down.
+          </li>
+          <li>
+            <span class="grey">&lttitle>&lt/title></span> — the
+            <span class="grey">&lttitle></span> element. This sets the title of
+            your page, which is the title that appears in the browser tab the
+            page is loaded in. It is also used to describe the page when you
+            bookmark/favorite it.
+          </li>
+          <li>
+            <span class="grey">&ltbody>&lt/body></span> — the
+            <span class="grey">&ltbody></span> element. This contains all the
+            content that you want to show to web users when they visit your
+            page, whether that's text, images, videos, games, playable audio
+            tracks, or whatever else
+          </li>
+        </ul>
+      </section>
+      <section id="images">
+        <h3 class="h3-heading">Images</h3>
+        <p class="paragraph">
+          <span class="grey">&ltimg></span> embeds an image into our page in the
+          position it appears. It does this via the src (source) attribute,
+          which contains the path to our image file.
+        </p>
+        <p class="code-snippet">
+          &lt<span class="green">img</span> <span class="red">src</span>="<span
+            class="green"
+            >images/firefox-icon.png</span
+          >" <span class="red">alt</span>="<span class="green"
+            >My test image</span
+          >" />
+        </p>
+        <p class="paragraph">
+          We have also included an alt (alternative) attribute. In the alt
+          attribute, you specify descriptive text for users who cannot see the
+          image, possibly because of the following reasons:
+        </p>
+        <ol>
+          <li>
+            They are visually impaired. Users with significant visual
+            impairments often use tools called screen readers to read out the
+            alt text to them.
+          </li>
+          <li>
+            Something has gone wrong causing the image not to display. For
+            example, try deliberately changing the path inside your
+            <span class="grey">src</span> attribute to make it incorrect. If you
+            save and reload the page, you should see something like this in
+            place of the image:
+          </li>
+        </ol>
+        <img class="alt-img" src="images/alt-text-example.png" alt="" />
+        <p class="paragraph">
+          The keywords for alt text are "descriptive text". The alt text you
+          write should provide the reader with enough information to have a good
+          idea of what the image conveys.
+        </p>
+      </section>
+      <section id="marking-text">
+        <h2 class="h2-heading">Marking up text</h2>
+        <p class="paragraph">
+          This section will cover some essential HTML elements you'll use for
+          marking up the text.
+        </p>
+      </section>
+      <section id="headings">
+        <h3 class="h3-heading">Headings</h3>
+        <p class="paragraph">
+          Heading elements allow you to specify that certain parts of your
+          content are headings — or subheadings. In the same way that a book has
+          the main title, chapter titles, and subtitles, an HTML document can
+          too. HTML contains 6 heading levels,
+          <span class="grey">&lth1> - &lth6></span>
+        </p>
+        <p class="code-snippet">
+          &lt<span class="green">h1</span>>My main title &lt/<span class="green"
+            >h1</span
+          >> <br />
+          &lt<span class="green">h2</span>>My top level heading &lt/<span
+            class="green"
+            >h2</span
+          >> <br />
+          &lt<span class="green">h3</span>>My subheading &lt/<span class="green"
+            >h3</span
+          >> <br />
+          &lt<span class="green">h4</span>>My sub-subheading &lt/<span
+            class="green"
+            >h4</span
+          >> <br />
+        </p>
+      </section>
+      <section id="paragraphs">
+        <h3 class="h3-heading">Paragraphs</h3>
+        <p class="paragraph">
+          <span class="grey">&ltp></span> elements are for containing paragraphs
+          of text; you'll use these frequently when marking up regular text
+          content:
+        </p>
+        <p class="code-snippet">
+          &lt<span class="green">p</span>>This is a single paragraph &lt/<span
+            class="green"
+            >p</span
+          >>
+        </p>
+      </section>
+      <section id="lists">
+        <h3 class="h3-heading">Lists</h3>
+        <p class="paragraph">
+          A lot of the web's content is lists and HTML has special elements for
+          these. Marking up lists always consists of at least 2 elements. The
+          most common list types are ordered and unordered lists:
+        </p>
+        <ol>
+          <li>
+            <span class="bold">Unordered lists</span> are for lists where the
+            order of the items doesn't matter, such as a shopping list. These
+            are wrapped in a <span class="grey">&ltul></span> element.
+          </li>
+          <li>
+            <span class="bold">Ordered lists</span> are for lists where the
+            order of the items does matter, such as a recipe. These are wrapped
+            in an <span class="grey">&ltol></span> element.
+          </li>
+        </ol>
+        <p class="paragraph">
+          Each item inside the lists is put inside an
+          <span class="grey">&ltli></span> (list item) element.
+        </p>
+      </section>
+      <section id="links">
+        <h2 class="h2-heading">Links</h2>
+        <p class="paragraph">
+          Links are very important — they are what makes the web a web! To add a
+          link, we need to use a simple element —
+          <span class="grey">&lta></span> — "a" being the short form for
+          "anchor".
+        </p>
+        <p class="paragraph">
+          Wrap the text in an <span class="grey">&lta></span> element. Give it
+          an <span class="grey">href</span> attribute and fill the value of this
+          attribute with the web address you want to link to:
+        </p>
+        <p class="code-snippet">
+          &lt<span class="green">a</span> <span class="red">href</span>="<span
+            class="green"
+            >https://www.mozilla.org/en-US/about/manifesto/</span
+          >">Mozilla Manifesto&lt/<span class="green">a</span>>
+        </p>
+      </section>
+      <section id="reference" class="reference">
+        <h2 class="h2-heading">Reference</h2>
+        <p class="paragraph">
+          All the documentation in this page is taken from
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+            >MDN</a
+          >.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

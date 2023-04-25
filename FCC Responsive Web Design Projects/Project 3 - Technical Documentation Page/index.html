@@ -8,67 +8,67 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav id="navbar" class="navbar">
+        <header class="nav-list-heading">Content</header>
         <ul>
-            <li class="nav-list-heading">
-                Content
-            </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#what-is-html">So what is HTML?</a>
+            <a class="nav-link" href="#So_what_is_html?">So what is HTML?</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#html-anatomy"
+            <a class="nav-link" href="#Anatomy_of_an_HTML_element"
               >Anatomy of an HTML element</a
             >
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#nesting-elements">Nesting elements</a>
+            <a class="nav-link" href="#Nesting_elements">Nesting elements</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#void-elements">Void elements</a>
+            <a class="nav-link" href="#Void_elements">Void elements</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#anatomy-html-doc"
+            <a class="nav-link" href="#Anatomy_of_an_HTML_document"
               >Anatomy of an HTML document</a
             >
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#images">Images</a>
+            <a class="nav-link" href="#Images">Images</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#marking-text">Marking up text</a>
+            <a class="nav-link" href="#Marking_up_text">Marking up text</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#headings">Headings</a>
+            <a class="nav-link" href="#Headings">Headings</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#paragraphs">Paragraphs</a>
+            <a class="nav-link" href="#Paragraphs">Paragraphs</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#lists">Lists</a>
+            <a class="nav-link" href="#Lists">Lists</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#links">Links</a>
+            <a class="nav-link" href="#Links">Links</a>
           </li>
           <li class="nav-list-item">
-            <a class="navbar-link" href="#reference">Reference</a>
+            <a class="nav-link" href="#Reference">Reference</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <h1 class="h1-heading">HTML basics</h1>
-      <p class="paragraph">
-        HTML (<span class="bold">H</span>yper<span class="bold">T</span>ext
-        <span class="bold">M</span>arkup <span class="bold">L</span>anguage) is
-        the code that is used to structure a web page and its content. For
-        example, content could be structured within a set of paragraphs, a list
-        of bulleted points, or using images and data tables. As the title
-        suggests, this article will give you a basic understanding of HTML and
-        its functions.
-      </p>
-      <section id="what-is-html">
-        <h2 class="h2-heading">So what is HTML?</h2>
+    <main class="main" id="main-doc">
+      <section id="Html_basics">
+        <header class="h1-heading">HTML basics</header>
+        <p class="paragraph">
+          HTML (<span class="bold">H</span>yper<span class="bold">T</span>ext
+          <span class="bold">M</span>arkup <span class="bold">L</span>anguage)
+          is the code that is used to structure a web page and its content. For
+          example, content could be structured within a set of paragraphs, a
+          list of bulleted points, or using images and data tables. As the title
+          suggests, this article will give you a basic understanding of HTML and
+          its functions.
+        </p>
+      </section>
+      <section id="So_what_is_html?" class="main-section">
+        <header class="h2-heading">So what is HTML?</header>
         <p class="paragraph">
           HTML is a markup language that defines the structure of your content.
           HTML consists of a series of elements, which you use to enclose, or
@@ -78,15 +78,15 @@
           bigger or smaller, and so on. For example, take the following line of
           content:
         </p>
-        <p class="code-snippet">My cat is very grumpy</p>
+        <code class="code-snippet">My cat is very grumpy</code>
         <p class="paragraph">
           If we wanted the line to stand by itself, we could specify that it is
           a paragraph by enclosing it in paragraph tags:
         </p>
-        <p class="code-snippet">&ltp&gtMy cat is very grumpy&lt/p&gt;</p>
+        <code class="code-snippet">&ltp&gtMy cat is very grumpy&lt/p&gt;</code>
       </section>
-      <section id="html-anatomy">
-        <h3 class="h3-heading">Anatomy of an HTML element</h3>
+      <section id="Anatomy_of_an_HTML_element" class="main-section">
+        <header class="h3-heading">Anatomy of an HTML element</header>
         <p class="paragraph">The main parts of our element are as follows:</p>
         <ol>
           <li>
@@ -112,8 +112,14 @@
             tag, and the content together comprise the element.
           </li>
         </ol>
-        <p class="paragraph">Elements can also have attributes that look like the following:</p>
-        <img class="attribute-img" src="images/attributes-example.png" alt="" />
+        <p class="paragraph">
+          Elements can also have attributes that look like the following:
+        </p>
+        <img
+          class="attribute-img"
+          src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png"
+          alt=""
+        />
         <p class="paragraph">
           Attributes contain extra information about the element that you don't
           want to appear in the actual content. Here,
@@ -137,8 +143,8 @@
           </li>
         </ol>
       </section>
-      <section id="nesting-elements">
-        <h3 class="h3-heading">Nesting elements</h3>
+      <section id="Nesting_elements" class="main-section">
+        <header class="h3-heading">Nesting elements</header>
         <p class="paragraph">
           You can put elements inside other elements too — this is called
           <span class="bold">nesting</span>. If we wanted to state that our cat
@@ -146,29 +152,29 @@
           "very" in a <span class="grey">&ltstrong&gt</span> element, which
           means that the word is to be strongly emphasized:
         </p>
-        <p class="code-snippet">
+        <code class="code-snippet">
           &lt<span class="green">p</span>>My cat is &lt<span class="green"
             >strong</span
           >>very&lt/<span class="green">strong</span>> grumpy.&lt/<span
             class="green"
             >p</span
           >>
-        </p>
+        </code>
       </section>
-      <section id="void-elements">
-        <h3 class="h3-heading">Void elements</h3>
+      <section id="Void_elements" class="main-section">
+        <header class="h3-heading">Void elements</header>
         <p class="paragraph">
           Some elements have no content and are called void elements. Take the
           <img /> element that we already have in our HTML page:
         </p>
-        <p class="code-snippet">
+        <code class="code-snippet">
           &lt<span class="green">img</span> <span class="red">src</span>="<span
             class="green"
             >images/firefox-icon.png</span
           >" <span class="red">alt</span>="<span class="green"
             >My test image</span
           >" />
-        </p>
+        </code>
         <p class="paragraph">
           This contains two attributes, but there is no closing
           <span class="grey">&lt/img></span> tag and no inner content. This is
@@ -176,8 +182,8 @@
           purpose is to embed an image in the HTML page in the place it appears.
         </p>
       </section>
-      <section id="anatomy-html-doc">
-        <h3 class="h3-heading">Anatomy of an HTML document</h3>
+      <section id="Anatomy_of_an_HTML_document" class="main-section">
+        <header class="h3-heading">Anatomy of an HTML document</header>
         <p class="paragraph">
           That wraps up the basics of individual HTML elements, but they aren't
           handy on their own. Now we'll look at how individual elements are
@@ -243,21 +249,21 @@
           </li>
         </ul>
       </section>
-      <section id="images">
-        <h3 class="h3-heading">Images</h3>
+      <section id="Images" class="main-section">
+        <header class="h2-heading">Images</header>
         <p class="paragraph">
           <span class="grey">&ltimg></span> embeds an image into our page in the
           position it appears. It does this via the src (source) attribute,
           which contains the path to our image file.
         </p>
-        <p class="code-snippet">
+        <code class="code-snippet">
           &lt<span class="green">img</span> <span class="red">src</span>="<span
             class="green"
             >images/firefox-icon.png</span
           >" <span class="red">alt</span>="<span class="green"
             >My test image</span
           >" />
-        </p>
+        </code>
         <p class="paragraph">
           We have also included an alt (alternative) attribute. In the alt
           attribute, you specify descriptive text for users who cannot see the
@@ -277,22 +283,26 @@
             place of the image:
           </li>
         </ol>
-        <img class="alt-img" src="images/alt-text-example.png" alt="" />
+        <img
+          class="alt-img"
+          src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/alt-text-example.png"
+          alt=""
+        />
         <p class="paragraph">
           The keywords for alt text are "descriptive text". The alt text you
           write should provide the reader with enough information to have a good
           idea of what the image conveys.
         </p>
       </section>
-      <section id="marking-text">
-        <h2 class="h2-heading">Marking up text</h2>
+      <section id="Marking_up_text" class="main-section">
+        <header class="h2-heading">Marking up text</header>
         <p class="paragraph">
           This section will cover some essential HTML elements you'll use for
           marking up the text.
         </p>
       </section>
-      <section id="headings">
-        <h3 class="h3-heading">Headings</h3>
+      <section id="Headings" class="main-section">
+        <header class="h3-heading">Headings</header>
         <p class="paragraph">
           Heading elements allow you to specify that certain parts of your
           content are headings — or subheadings. In the same way that a book has
@@ -300,7 +310,7 @@
           too. HTML contains 6 heading levels,
           <span class="grey">&lth1> - &lth6></span>
         </p>
-        <p class="code-snippet">
+        <code class="code-snippet">
           &lt<span class="green">h1</span>>My main title &lt/<span class="green"
             >h1</span
           >> <br />
@@ -315,24 +325,24 @@
             class="green"
             >h4</span
           >> <br />
-        </p>
+        </code>
       </section>
-      <section id="paragraphs">
-        <h3 class="h3-heading">Paragraphs</h3>
+      <section id="Paragraphs" class="main-section">
+        <header class="h3-heading">Paragraphs</header>
         <p class="paragraph">
           <span class="grey">&ltp></span> elements are for containing paragraphs
           of text; you'll use these frequently when marking up regular text
           content:
         </p>
-        <p class="code-snippet">
+        <code class="code-snippet">
           &lt<span class="green">p</span>>This is a single paragraph &lt/<span
             class="green"
             >p</span
           >>
-        </p>
+        </code>
       </section>
-      <section id="lists">
-        <h3 class="h3-heading">Lists</h3>
+      <section id="Lists" class="main-section">
+        <header class="h3-heading">Lists</header>
         <p class="paragraph">
           A lot of the web's content is lists and HTML has special elements for
           these. Marking up lists always consists of at least 2 elements. The
@@ -355,8 +365,8 @@
           <span class="grey">&ltli></span> (list item) element.
         </p>
       </section>
-      <section id="links">
-        <h2 class="h2-heading">Links</h2>
+      <section id="Links" class="main-section">
+        <header class="h2-heading">Links</header>
         <p class="paragraph">
           Links are very important — they are what makes the web a web! To add a
           link, we need to use a simple element —
@@ -368,15 +378,15 @@
           an <span class="grey">href</span> attribute and fill the value of this
           attribute with the web address you want to link to:
         </p>
-        <p class="code-snippet">
+        <code class="code-snippet">
           &lt<span class="green">a</span> <span class="red">href</span>="<span
             class="green"
             >https://www.mozilla.org/en-US/about/manifesto/</span
           >">Mozilla Manifesto&lt/<span class="green">a</span>>
-        </p>
+        </code>
       </section>
-      <section id="reference" class="reference">
-        <h2 class="h2-heading">Reference</h2>
+      <section id="Reference" class="reference main-section">
+        <header class="h3-heading">Reference</header>
         <p class="paragraph">
           All the documentation in this page is taken from
           <a

@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat&family=Noto+Sans+JP&family=Patrick+Hand&display=swap");
+
+* {
+  color: #434a42;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 50px;
+  width: 100%;
+}
+
+/* header and navbar */
+.header {
+  background-color: #434a42;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-bar {
+  align-self: center;
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  width: 300px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #626c66;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.logo {
+  max-width: 100%;
+  object-fit: contain;
+  padding-left: 15px;
+  width: 70px;
+}
+
+/* main image */
+
+.hero {
+  background-color: black;
+  max-height: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+.img-text {
+  color: white;
+  left: 32%;
+  position: absolute;
+  top: 60%;
+  transform: translate(-23%, -50%);
+}
+
+.title {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: white;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+
+/* main sections - destinations and packages */
+.destinations-title,
+.package-title {
+  font-family: "Patrick Hand", cursive;
+  font-size: 15px;
+  text-align: center;
+  text-decoration-color: #aca885;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.destinations-container,
+.packages-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.destination-img,
+.package-img {
+  aspect-ratio: 2/3;
+  border-radius: 15px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+
+.destination-section,
+.package-section {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px 20px 50px;
+}
+
+.destination,
+.package {
+  margin-top: 20px;
+  max-width: 250px;
+}
+
+.destination-country,
+.package-name {
+  font-family: "Patrick Hand", cursive;
+  font-size: 13px;
+  letter-spacing: 2;
+  margin: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.package-name {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.4;
+  text-transform: none;
+}
+
+.package-img {
+  aspect-ratio: 1;
+}
+
+.packages-container {
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.package-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  max-height: 64px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+/* video section */
+.video {
+  margin: 50px 0;
+}
+
+.embedded-video {
+  display: block;
+  margin: 0 auto;
+}
+
+/* buttons */
+.button {
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  cursor: pointer;
+  display: block;
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  outline: 0;
+  padding: 13px 20px 13px;
+  position: relative;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+.button:after {
+  background-color: #e1ca96;
+  content: "";
+  height: 100%;
+  left: 7px;
+  position: absolute;
+  top: 7px;
+  transition: 0.2s;
+  width: 100%;
+  z-index: -1;
+}
+
+.button:hover:after {
+  left: 0px;
+  top: 0px;
+}
+
+.more-info-button {
+  font-size: 10px;
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+
+.submit-button {
+  align-self: end;
+  background-color: #626c66;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  height: 30px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  width: 30%;
+}
+
+/* contact form section */
+.contact-section {
+  background-color: #918b76;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  color: white;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+.input-text {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 1px solid #434a42;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.input-text::placeholder {
+  color: #696969;
+}
+
+.input-message {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5px;
+  text-indent: 5px;
+  border: 1px solid #434a42;
+}
+
+.contact-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+/* media queries */
+/* media queries from 301px and upwards */
+@media only screen and (min-width: 301px) {
+  .title {
+    font-size: 16px;
+  }
+  .tagline {
+    font-size: 10px;
+  }
+}
+
+/* media queries from 401px and upwards */
+@media screen and (min-width: 401px) {
+  nav-link:hover {
+    padding: 5px 10px;
+  }
+  .title {
+    font-size: 21px;
+  }
+  .tagline {
+    font-size: 11px;
+    line-height: 0.9rem;
+  }
+  .logo {
+    width: 90px;
+  }
+  .nav-bar {
+    margin-right: 5px;
+  }
+  .nav-link {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .img-text {
+    top: 55%;
+  }
+  .contact-section {
+    padding: 50px;
+  }
+  .nav-bar {
+    margin-right: 10px;
+  }
+}
+/* media queries from 601px and upwards */
+@media (min-width: 601px) {
+  .contact-section {
+    flex-direction: row;
+    gap: 40px;
+    padding: 50px;
+  }
+  .contact-intro {
+    flex-basis: 373px;
+  }
+  .form {
+    flex-basis: 387px;
+  }
+}
+
+/* media queries from 695px and upwards */
+@media only screen and (min-width: 695px) {
+  .img-text {
+    top: 50%;
+  }
+  .logo {
+    padding: 0 25px;
+    width: 110px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .package-title,
+  .destinations-title {
+    font-size: 20px;
+  }
+}
+
+/* media queries from 795px and upwards */
+@media only screen and (min-width: 795px) {
+  .title {
+    font-size: 35px;
+  }
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+  .contact-description {
+    font-size: 12px;
+  }
+  .contact-title {
+    font-size: 20px;
+  }
+}
+
+/* media queries from 901px and upwards */
+@media only screen and (min-width: 901px) {
+  .title {
+    font-size: 40px;
+  }
+  .tagline {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .tagline {
+    margin: 0 auto;
+    max-width: 70%;
+  }
+}

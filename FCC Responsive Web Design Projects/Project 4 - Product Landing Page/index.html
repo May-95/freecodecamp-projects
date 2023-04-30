@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TOURINGO | Tour Guide</title>
+  </head>
+  <body>
+    <!-- header section with the navbar and the website logo -->
+    <header id="header" class="header">
+      <img
+        src="./images/logo.png"
+        alt="Touringo logo with a map and plane logo"
+        class="logo"
+        id="header-img"
+      />
+      <nav id="nav-bar" class="nav-bar">
+        <a href="#destinations" class="nav-link">Destinations</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+    <!-- main section of the website -->
+    <main class="main-section">
+      <!-- image section with the title and tagline -->
+      <section class="hero">
+        <img
+          src="./images/img1.jpg"
+          alt="photo of a boat on a lake surrounded by mountains"
+          class="img"
+        />
+        <div class="img-text">
+          <h1 class="title">Explore Europe with Us!</h1>
+          <p class="tagline">
+            Touringo is your go-to for exploring Europe! Our experienced guides
+            and tailored tours make it easy to explore the continent's culture,
+            history, and cuisine. With us, you'll experience the best of Europe
+            with no stress.
+          </p>
+        </div>
+      </section>
+      <!-- destination section -->
+      <section class="destination-section" id="destinations">
+        <h2 class="destinations-title">Top Destinations</h2>
+        <div class="destinations-container">
+          <div class="destination">
+            <img
+              src="./images/London.jpg"
+              alt="Photo of london, a white cab in the shot and the classic red bus behind it"
+              class="destination-img"
+            />
+            <p class="destination-country">London</p>
+          </div>
+          <div class="destination">
+            <img
+              src="./images/Rome.jpg"
+              alt="a woman standing in front of the Colosseum with her back to the camera"
+              class="destination-img"
+            />
+            <p class="destination-country">Rome</p>
+          </div>
+          <div class="destination">
+            <img
+              src="./images/Paris.jpg"
+              alt="Photo of the Eiffel tower"
+              class="destination-img"
+            />
+            <p class="destination-country">Paris</p>
+          </div>
+        </div>
+        <button class="button" role="button">All destinations</button>
+      </section>
+      <!-- video embedded -->
+      <section class="video">
+        <iframe
+          class="embedded-video"
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KQlChEl962s"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <!-- package section -->
+      <section class="package-section" id="packages">
+        <h2 class="package-title">Packages</h2>
+        <div class="packages-container">
+          <div class="package">
+            <img
+              src="./images/custom.jpg"
+              alt="A group of women in a pink car with colourful house behind them."
+              class="package-img"
+            />
+            <h3 class="package-name">Custom Tour Planning</h3>
+            <p class="package-description">
+              A service that allows customers to plan custom tours to their
+              specific needs, including tours of the city or guided hikes.
+            </p>
+            <button class="button more-info-button">more info</button>
+          </div>
+          <div class="package">
+            <img
+              src="./images/sightseeing.jpg"
+              alt="A woman looking at a view with her back to the camera"
+              class="package-img"
+            />
+            <h3 class="package-name">Sightseeing Tours</h3>
+            <p class="package-description">
+              A service that offers customers guided tours of local attractions,
+              including historical sites, monuments, and nature reserves.
+            </p>
+            <button class="button more-info-button">more info</button>
+          </div>
+          <div class="package">
+            <img
+              src="./images/activity.jpg"
+              alt="group of people on a boat"
+              class="package-img"
+            />
+            <h3 class="package-name">Activity Booking</h3>
+            <p class="package-description">
+              A service that helps customers book activities such as boat tours,
+              bike tours, and cooking classes.
+            </p>
+            <button class="button more-info-button">more info</button>
+          </div>
+        </div>
+      </section>
+      <!-- contact form section -->
+      <section class="contact-section" id="contact">
+        <div class="contact-intro">
+          <h2 class="contact-title">Touringo Contact Form</h2>
+          <p class="contact-description">
+            We at Touringo are here to help you plan your dream trip. Whether
+            you need assistance booking flights, hotels, or activities, our team
+            of experienced travel guides are here to help. Please fill out this
+            form to get in contact with one of our team members.
+          </p>
+        </div>
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          class="form"
+          id="form"
+        >
+          <label for="name" class="input-label">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Smith"
+            class="input-text"
+          />
+          <label for="email" class="input-label">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-text"
+            placeholder="abc@example.com"
+          />
+          <label for="message" class="input-label">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="input-message"
+          ></textarea>
+          <input type="submit" value="Send" class="submit-button" id="submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

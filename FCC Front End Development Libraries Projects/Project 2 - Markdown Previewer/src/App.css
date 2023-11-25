@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins:wght@500&family=Raleway:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#root {
+  color: #e4e9ec;
+  letter-spacing: 0.3px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #2f3148;
+}
+
+textarea {
+  width: 100%;
+}
+
+blockquote {
+  border-left: 4px solid #ccc;
+  margin-left: 32px;
+  padding-left: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 0;
+  max-width: 1200px;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Playpen Sans", cursive;
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.section-container {
+  min-width: 550px;
+}
+
+.section {
+  background-color: #8689ac;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: #fcfcfc;
+  font-family: "Raleway", "Poppins", sans-serif;
+  font-size: 14px;
+  height: 550px;
+  max-width: 550px;
+  overflow: scroll;
+  padding: 10px 10px 10px 15px;
+}
+
+.section:focus-visible {
+  outline: none;
+}
+
+.section-title {
+  background: #3f5576;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 15px 10px 10px 15px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #2a5d8a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .section-container {
+    min-width: 100%;
+  }
+}

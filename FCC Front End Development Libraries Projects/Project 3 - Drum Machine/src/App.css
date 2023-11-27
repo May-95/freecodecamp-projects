@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins:wght@500&family=Raleway:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+html {
+  align-items: center;
+  background-color: #18071e;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.drum-machine {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding-bottom: 20px;
+}
+
+.clip {
+  cursor: pointer;
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.drum-pad {
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-basis: 30%;
+  font-family: "Raleway", "Poppins", sans-serif;
+  font-size: 22px;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+}
+
+.bg1 {
+  background-color: #391149;
+  border: none;
+}
+
+.bg2 {
+  background-color: #7c249e;
+  border: none;
+}
+
+.display {
+  align-items: end;
+  color: #fcfcfc;
+  display: flex;
+  font-family: "Playpen Sans", cursive;
+  justify-content: center;
+  min-height: 80px;
+  text-align: center;
+}

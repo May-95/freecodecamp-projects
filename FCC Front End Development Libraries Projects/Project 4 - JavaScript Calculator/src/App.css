@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins:wght@500&family=Raleway:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+html {
+  align-items: center;
+  background-color: #1b3409;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  background-color: #375f1b;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 20px;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.subtract {
+  grid-area: minus;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.add {
+  grid-area: plus;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.equals {
+  grid-area: equal;
+}
+
+.zero {
+  grid-area: zero;
+  padding-bottom: 63px;
+}
+
+.decimal {
+  align-self: stretch;
+  grid-area: decimal;
+}
+
+.buttons-container {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 100px [col-start]);
+  padding: 10px;
+
+  grid-template-areas:
+    "clear clear divide multiply"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero decimal equal";
+}
+
+.buttons {
+  background-color: #6a964a;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: #fcfcfc;
+  font-family: "Raleway", "Poppins", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding: 25px;
+  text-align: center;
+}
+
+.buttons:hover {
+  box-shadow: rgba(2, 34, 8, 0.245) 0px 0px 0px 2px,
+    rgba(3, 43, 20, 0.393) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.display {
+  align-items: end;
+  color: #fcfcfc;
+  display: flex;
+  font-family: "Playpen Sans", cursive;
+  justify-content: end;
+  min-height: 80px;
+  text-align: right;
+}

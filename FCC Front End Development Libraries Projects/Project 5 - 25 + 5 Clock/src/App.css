@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins:wght@500&family=Raleway:wght@400&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+* {
+  box-sizing: border-box;
+  color: #f6fafd;
+}
+
+#root {
+  font-family: "Raleway", "Poppins", sans-serif;
+  letter-spacing: 1.5px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+html {
+  align-items: center;
+  background-color: #091d33;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.title {
+  color: #d9e7f8;
+  font-family: "Playpen Sans", cursive;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+}
+
+.container {
+  align-items: center;
+  background-color: #12365e;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.68) 1.95px 1.95px 7.6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 450px;
+  justify-content: center;
+  min-width: 500px;
+  padding: 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.update-time {
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.break-session {
+  gap: 30px;
+  margin-bottom: 0;
+}
+
+.increment-decrement {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  height: 40px;
+  padding: 5px;
+  width: 30px;
+}
+
+.start_stop,
+.reset {
+  background-color: #5c9ae0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: black;
+  color: #f6fafd;
+  height: 29px;
+  letter-spacing: 2px;
+  margin: 0 20px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  width: 70px;
+}
+
+.start_stop:hover,
+.reset:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.time-controls {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.time-left {
+  font-size: 3.3rem;
+  margin: 5px 20px 10px;
+}
+
+.timer-label {
+  margin: 0;
+}
+
+.session-label,
+.break-label {
+  margin-bottom: 0;
+}
+
+.session-length,
+.break-length {
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+#beep {
+  display: none;
+}

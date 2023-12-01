@@ -16,3 +16,13 @@ This repository contains projects completed as part of freeCodeCamp's Front End 
 
    - [Live Preview](https://drum-machine-two-coral.vercel.app)
 
+- **Project 4** - [JavaScript Calculator](https://github.com/May-95/freecodecamp-projects/tree/main/FCC%20Front%20End%20Development%20Libraries%20Projects/Project%204%20-%20JavaScript%20Calculator)
+
+   - [Live Preview](https://calculator-green-mu.vercel.app)
+ 
+- **Project 5** - [25 + 5 Clock](https://github.com/May-95/freecodecamp-projects/tree/main/FCC%20Front%20End%20Development%20Libraries%20Projects/Project%205%20-%2025%20%2B%205%20Clock)
+
+   - [Live Preview](https://pomodoro-clock-five.vercel.app)
+
+## Front End Development Libraries Certificate
+![screenshot](https://github.com/May-95/freecodecamp-projects/blob/main/FCC%20Front%20End%20Development%20Libraries%20Projects/Front%20End%20Development%20Libraries%20Certificate.png)

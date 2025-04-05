@@ -1,0 +1,22 @@
+{
+  "name": "exercise-tracker",
+  "version": "1.0.0",
+  "description": "An FCC Back End Development and APIs Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.0"
+  },
+  "author": "May-95",
+  "keywords": [
+    "node",
+    "express",
+    "exercise-tracker"
+  ],
+  "license": "MIT"
+}

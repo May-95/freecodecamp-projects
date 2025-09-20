@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 0;
+  text-align: center;
+}
+
+body {
+  padding: 10px;
+  background-color: #d3d3d3;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.issue {
+  margin: 20px;
+  padding: 5px;
+  width: 60%;
+  border: 2px solid #000;
+}
+
+.test-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 80%;
+}
+
+#testForm, #testForm2, #testForm3, #testui {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 80%;
+}
+
+input {
+  padding: 5px;
+}
+
+input[type="text"], textarea {
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  min-width: 50%;
+  border: 1px solid #fff;
+  min-height: 20px;
+}
+
+textarea {
+  min-width: 50%;
+  min-height: 35px;
+  padding-top: 14px;
+  resize: vertical;
+}
+
+.closed {
+  background-color: #d3d3d3;
+}
+
+.id {
+  font-size: 0.65rem;
+}
+
+button {
+  min-height: 20px;
+  min-width: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  margin-top: -10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+#jsonResult {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: left;
+  font-family: 'Courier New', Consolas, Monaco, monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  max-width: 80%;
+  font-size: 1.1rem;
+}
